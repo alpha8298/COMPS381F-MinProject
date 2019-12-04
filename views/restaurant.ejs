@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<header class="w3-container w3-teal">
+  <h1></h1>
+</header>
+<body>
+<div class="w3-container">
+<h1><%= restaurant[0].name %></h1>
+<form action= "restaurant" method= "get">
+<p><label class="w3-label w3-validate">Name: </label><%= restaurant[0].name%></p>
+<p><label class="w3-label w3-validate">Borough: </label><%= restaurant[0].borough%></p>
+<p><label class="w3-label w3-validate">Cuisine: </label><%= restaurant[0].cuisine%></p>
+<p><label class="w3-label w3-validate">Street: </label><%= restaurant[0].street%></p>
+<p><label class="w3-label w3-validate">Building: </label><%= restaurant[0].building%></p>
+<p><label class="w3-label w3-validate">Zipcode: </label><%= restaurant[0].zipcode%></p>
+<p><label class="w3-label w3-validate">Latitude: </label><%= restaurant[0].latitudde%></p>
+<p><label class="w3-label w3-validate">Longitude: </label><%= restaurant[0].longitude%></p>
+<p><label class="w3-label w3-validate">Rating: </label><%= restaurant[0].rate%></p>
+</form>
+
+
+<form action= "/rate/<%= restaurant[0].name%>" method= "get">
+    <button class="w3-btn w3-section w3-teal w3-ripple">Rate</button>
+</form>
+
+<form action= "/update/<%= restaurant[0].name%>" method= "get">
+  <button class="w3-btn w3-section w3-teal w3-ripple">Edit</button>
+</form>
+
+<form action= "/delete/<%= restaurant[0].name%>" method= "get">
+  <button class="w3-btn w3-section w3-teal w3-ripple">Delete</button>
+</form>
+
+<form action= "/list" method= "get">
+<button class="w3-btn w3-section w3-teal w3-ripple" onclick="goBack()">Go Back</button>
+</form>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create New Restaurant Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+
+<header class="w3-container w3-teal">
+  <h1>Create New Restaurant Documents</h1>
+</header>
+
+<div class="w3-container w3-half w3-margin-top">
+  
+<form action="/upload" method="post" encType="multipart/form-data">
+  <p>
+  <label class="w3-label w3-validate">Name</label></p>
+  <input name="name" class="w3-input" type="text" style="width:90%" required="" id = "name" placeholder ="name">
+  <p>
+  <label class="w3-label w3-validate">Borough</label></p>
+  <input name="borough" class="w3-input" type="text" style="width:90%" id = "borough" placeholder ="borough">
+  <p>  
+  <label class="w3-label w3-validate">Cuisine</label></p>
+  <input name="cuisine" class="w3-input" type="text" style="width:90%"id = "cuisine" placeholder ="cuisine" >
+ 
+  <input name="ptype" class="w3-input" type="text" style="width:90%" id = "ptype" placeholder ="ptype" >
+  <H3> Address </H3> 
+  <p>
+  <label class="w3-label w3-validate">Street</label></p>
+  <input name="street" class="w3-input" type="text" style="width:90%" id = "street" placeholder ="street"><br>
+  <p>
+  <label class="w3-label w3-validate">Building</label></p>
+  <input name="building" class="w3-input" type="text" style="width:90%" id = "building" placeholder ="building">
+  <p>
+  <label class="w3-label w3-validate">ZipCode</label></p>
+  <input name="zipcode" class="w3-input" type="text" style="width:90%" id = "zipcode" placeholder ="zipcode">
+  <H3> Coordinate </H3>
+  <p>
+  <label class="w3-label w3-validate">latitude</label></p>
+  <input name="latitude" class="w3-input" type="text" style="width:90%" id = "latitude" placeholder ="latitude">
+  <p>
+  <label class="w3-label w3-validate">longitude</label></p>
+  <input name="longitude" class="w3-input" type="text" style="width:90%" id = "longitude" placeholder ="longitude">
+  <p>
+  <label class="w3-label w3-validate">Owner</label></p>
+  <input name="owner" class="w3-input" type="text" style="width:90%" required="" id = "owner" placeholder ="owner"><br>
+ 
+
+
+
+
+<p>
+  <input name="sampleFile" class="w3-input" type="file">
+  <label class="w3-label w3-validate">Photo</label></p>
+
+ 
+
+
+
+
+
+
+ <p>
+  <button class= "w3-btn w3-section w3-teal w3-ripple"> Upload </button> </p>
+<!--  <input type="submit" value="submit" id = "submit" name = "submit"> -->
+  </p>
+</form>
+
+</div>
+</body>
+</html>
+

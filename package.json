@@ -1,0 +1,17 @@
+{
+    "name": "Zerone-restaurant",
+    "description": "Restaurant Management",
+    "author": "Albert Lai <s1211794@ouhk.edu.hk>",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "*",
+        "ejs": "*",
+        "formidable": "1.2.1",
+        "mongodb": "3.3.5",
+        "body-parser": "*"
+    },
+    "engine": "node >= 0.10.0",
+    "scripts": {
+        "start": "node server"
+    }
+}

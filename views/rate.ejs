@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Rate </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet">
+</head><body>
+
+<div class="w3-container w3-teal">
+  <h2>Rate </h2>
+</div>
+<p>
+</p><form class="w3-container" method="post" acton="/rate/<%= restaurant[0].name%>">
+  <input name="_id" type="hidden" value="5de3abe3eee16a00785a4d19">
+  <label>Score (1-10):</label>
+  <input name="score" class="w3-input" id= "score" type="number" min="1" max="10">
+  <button class="w3-btn">Rate</button>
+</form>
+
+<form action= "/list" method= "get">
+
+ <button class="w3-btn w3-section w3-teal w3-ripple">Back</button>
+
+</form>
+</body>
+</html>
+
