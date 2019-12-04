@@ -33,6 +33,8 @@ app.get('/', function(req,res) {
     res.render('login');
 });
 
+app.get('/login',(req,res) {
+    res.redirect('/list');
 
 app.get('/createac', function(req,res) {
     res.render('createac');
